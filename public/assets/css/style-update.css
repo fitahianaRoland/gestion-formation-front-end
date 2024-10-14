@@ -1,0 +1,45 @@
+.dropdown-menu-right {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+  /* overflow-x card-body */
+.card-body {
+    overflow-x: scroll;
+ }
+ .form-check .form-check-label.update-one{
+    margin-top: -25px; }
+/* update Sidebar */
+.sidebar {
+    padding-right: 10px; /* Ajout de padding pour éviter que le contenu touche la scrollbar */
+    overflow-y: scroll;
+}
+  
+.sidebar::-webkit-scrollbar {
+    width: 13px; /* Largeur de la scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent; /* Fond de la scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #555; /* Couleur de la scrollbar */
+    border-radius: 20px; /* Arrondir les coins de la scrollbar */
+    border: 3px solid #181824; /* Espacement entre le contenu et la scrollbar */
+}
+.sidebar-icon-only .main-panel {
+    margin: 0;
+} 
+.navbar .navbar-brand-wrapper .navbar-brand.update-logo img {
+    width: calc(258px - 120px);
+    max-width: 100%;
+    height: 55px;
+    margin: auto;
+    vertical-align: middle; }
+.navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini.update-logo img {
+    width: calc(95px - 50px);
+    max-width: 130%;
+    height: 38px;
+    margin: auto;
+    border-radius: 50%;
+}
