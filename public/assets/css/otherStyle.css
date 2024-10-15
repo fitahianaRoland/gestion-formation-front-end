@@ -1,0 +1,123 @@
+.icon-delete {
+    font-size: 30px; 
+    color: rgb(151, 17, 17);
+}
+
+.icon-edit {
+    font-size: 30px; 
+    color: rgb(17, 151, 17);
+}
+
+.title-hafa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.title-hafa h4 {
+    margin-right: 120px; 
+}
+
+.title-hafa i {
+    font-size: 2.5vw;
+    margin-top: -2vw;
+    color: #001737;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.borderst {
+    border: 2px solid;
+    background-color: #fff; 
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+input[type="radio"] {
+    accent-color: #f3d30c; 
+}
+
+.radio-label{
+    margin-right: 5%;
+    color: #A7AFB7;
+}
+
+.miakatra{
+    margin-top: -85px;
+}
+
+.icone-add {
+    font-size: 3vw;
+    margin-top: -20px; 
+    position: absolute;
+    right: 5%; 
+    color: #001737;   
+    cursor: pointer;
+}
+
+.icone-list i{
+    font-size: 30px;
+    color: #9d993e;   
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    transform: scale(2.0); 
+    margin-top: -7px;
+  }
+  
+
+.custom-checkbox:checked {
+  accent-color: #d2d658;
+}
+
+.check-block{
+    transform: scale(2.0); 
+    left: 130px;
+}
+
+.class-color{
+    background-color: #e8f1f8;
+}
+
+.update-login{
+    margin-left: 0;
+}
+
+.save-button{
+    margin-top: -1rem;
+}
+
+.button-div{
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.link-detail{
+    color: #000000;
+}
+
+.link-detail:hover{
+    color: #fbe307;
+}
+
+.icone-plus i{
+    font-size: 3vw;
+    margin-top: -10%; 
+    position: absolute;
+    right: -3%; 
+    color: #6f680a;   
+    cursor: pointer;
+}
