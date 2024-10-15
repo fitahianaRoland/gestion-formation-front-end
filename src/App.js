@@ -21,42 +21,42 @@ function App() {
           <Route 
               path='/Acceuil' 
               element={
-                  <ProtectedRoute>
+                  // <ProtectedRoute>
                       <Acceuil />
-                  </ProtectedRoute>
+                  // </ProtectedRoute>
               } 
           />
           <Route 
             path='/Formateur' 
             element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                     <Formateurpage />
-                </ProtectedRoute>
+                // </ProtectedRoute>
             } 
           />
 
           <Route 
             path='/AddFormation' 
             element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                     <AddFormationPage />
-                </ProtectedRoute>
+                // </ProtectedRoute>
             } 
           />
           <Route 
               path='/Demande' 
               element={
-                  <ProtectedRoute>
+                  // <ProtectedRoute>
                       <ListFormationPage />
-                  </ProtectedRoute>
+                  // </ProtectedRoute>
               } 
           />
           <Route 
               path='/DemandeSession' 
               element={
-                  <ProtectedRoute>
+                  // <ProtectedRoute>
                       <DemandeSession />
-                  </ProtectedRoute>
+                  // </ProtectedRoute>
               } 
           />
           <Route path="/forecast/trainingListPage" element={<TrainingListPage />} />
