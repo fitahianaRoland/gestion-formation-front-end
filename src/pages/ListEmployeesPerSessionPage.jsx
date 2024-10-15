@@ -1,16 +1,11 @@
-import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
 import ListEmployeesPerSession from '../components/forecast/ListEmployeesPerSession';
+import Template from './Template';
 
 function ListEmployeesPerSessionPage() {    
     return (
-        <div className="container-scroller">
-        <Header/>
-        <div className="container-fluid page-body-wrapper">
-          <Sidebar/>
+        <Template>
           <ListEmployeesPerSession/>
-        </div>
-      </div>
+        </Template>
     );
 };
 export default ListEmployeesPerSessionPage;

@@ -81,8 +81,6 @@ function TrainingList() {
   };
 
   return (
-    <div className="main-panel">
-      <div className="content-wrapper">
         <div className="row">
           <div className="col-lg-12 grid-margin stretch-card">
             <div className="card">
@@ -181,8 +179,6 @@ function TrainingList() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 }
 
