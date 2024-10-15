@@ -10,6 +10,7 @@ function Sidebar() {
     <nav className={`sidebar sidebar-offcanvas ${isSidebarOpen ? 'active' : ''}`} id="sidebar">
       <ul className="nav">
         <li className="nav-item nav-category">Main</li>
+        {/* ray */}
         <li className={`nav-item ${location.pathname === '/forecast/trainingListPage' ? 'active' : ''}`}>
           <NavLink
             to="/forecast/trainingListPage"
@@ -19,39 +20,53 @@ function Sidebar() {
             <span className="menu-title">Prévision</span>
           </NavLink>
         </li>
-        <li className={`nav-item ${location.pathname.includes('/forecast') ? 'active' : ''}`}>
+        {/* ray */}
+        <li className={`nav-item ${location.pathname.includes('/Formateur') ? 'active' : ''}`}>
           <a
             className="nav-link"
             data-toggle="collapse"
             href="#ui-basic"
-            aria-expanded={location.pathname.includes('/forecast')}
+            aria-expanded={location.pathname.includes('/Formateur')}
             aria-controls="ui-basic"
           >
-            <span className="icon-bg"><i className="mdi mdi-playlist-check menu-icon"></i></span>
-            <span className="menu-title">Réalisation</span>
+            <span className="icon-bg"><i className="mdi mdi-crosshairs-gps menu-icon"></i></span>
+            <span className="menu-title">Elements</span>
             <i className="menu-arrow"></i>
           </a>
-          <div className={`collapse ${location.pathname.includes('/forecast') ? 'show' : ''}`} id="ui-basic">
+          <div className={`collapse ${location.pathname.includes('/Formateur') ? 'show' : ''}`} id="ui-basic">
             <ul className="nav flex-column sub-menu">
               <li className="nav-item">
                 <NavLink
-                  to="/forecast/SessionListByTrainingPage"
+                  to="/Formateur"
                   className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
                 >
-                  Session List By Training Page
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/forecast/ListEmployeesPerSessionPage"
-                  className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
-                >
-                  List Employees Per Session Page
+                  Settings
                 </NavLink>
               </li>
             </ul>
           </div>
         </li>
+        {/* ray */}
+        <li className={`nav-item ${location.pathname.includes('/AddFormation') ? 'active' : ''}`}>
+          <NavLink
+            to="/AddFormation"
+            className='nav-link'
+          >
+            <span className="icon-bg"><i className="mdi mdi-folder-plus menu-icon"></i></span>
+            <span className="menu-title">Add Training</span>
+          </NavLink>
+        </li>
+        {/* ray */}
+        <li className={`nav-item ${location.pathname.includes('/Demande') ? 'active' : ''}`}>
+          <NavLink
+            to="/Demande"
+            className='nav-link'
+          >
+            <span className="icon-bg"><i className="mdi mdi-note-plus menu-icon"></i></span>
+            <span className="menu-title">Training Request</span>
+          </NavLink>
+        </li>
+        {/* ray */}
       </ul>
     </nav>
   );

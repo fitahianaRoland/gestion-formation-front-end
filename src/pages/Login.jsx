@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import React from "react";
+import LoginComponets from "../components/login";
 
-function ComponentName (){
-    return (
-        <div><h1>login</h1></div>
+const Login = () => {
+    return(
+        <LoginComponets />       
     );
 };
-export default ComponentName;
+
+export default Login;
