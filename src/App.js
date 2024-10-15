@@ -10,7 +10,52 @@ function App() {
     <SidebarProvider> 
       <BrowserRouter>
         <Routes>
+<<<<<<< Updated upstream
           <Route path="/" element={<Navigate to="/forecast/trainingListPage" />} />
+=======
+          <Route path="/" element={<Login />} />
+          <Route 
+              path='/Acceuil' 
+              element={
+                  // <ProtectedRoute>
+                      <Acceuil />
+                  // </ProtectedRoute>
+              } 
+          />
+          <Route 
+            path='/Formateur' 
+            element={
+                // <ProtectedRoute>
+                    <Formateurpage />
+                // </ProtectedRoute>
+            } 
+          />
+
+          <Route 
+            path='/AddFormation' 
+            element={
+                // <ProtectedRoute>
+                    <AddFormationPage />
+                // </ProtectedRoute>
+            } 
+          />
+          <Route 
+              path='/Demande' 
+              element={
+                  // <ProtectedRoute>
+                      <ListFormationPage />
+                  // </ProtectedRoute>
+              } 
+          />
+          <Route 
+              path='/DemandeSession' 
+              element={
+                  // <ProtectedRoute>
+                      <DemandeSession />
+                  // </ProtectedRoute>
+              } 
+          />
+>>>>>>> Stashed changes
           <Route path="/forecast/trainingListPage" element={<TrainingListPage />} />
           <Route path="/forecast/SessionListByTrainingPage" element={<SessionListByTrainingPage />} />
           <Route path="/forecast/ListEmployeesPerSessionPage" element={<ListEmployeesPerSessionPage />} />
